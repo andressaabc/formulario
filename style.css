@@ -1,0 +1,100 @@
+.container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    position: relative;
+    width: 600px;
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 1px solid white;
+    min-height: 100pv;
+    flex-direction: column;
+}
+
+.container:hover {
+    filter: drop-shadow(0 0 20px rgb(255, 255, 255));
+}
+
+/*
+body {
+    background-image: linear-gradient(to right, pink , rgb(168, 34, 168));
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*/
+body {
+    width: 100%;
+    height: 100%;
+    animation: changeBackgroundColor 10s infinite alternate;
+    /* propriedade de animação */
+    font-weight: lighter;
+}
+
+@keyframes changeBackgroundColor {
+    0% {
+        background-color: #7f0961;
+    }
+
+    25% {
+        background-color: #ff36ee;
+    }
+
+    50% {
+        background-color: #2f7bc7;
+    }
+
+    75% {
+        background-color: lightcoral;
+    }
+
+    100% {
+        background-color: rgb(231, 224, 25);
+    }
+}
+
+.container #titulo {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 25px;
+    color: white;
+    font-family: 'EB Garamond', serif;
+    ;
+}
+
+.erro {
+    color: red;
+}
+
+#cadastro:hover {
+    background-color: green;
+}
+
+#apagar:hover {
+    background-color: red;
+}
+
+.form-check:hover {
+    color: white;
+}
+
+.mb-3 .form-label .form-control {
+    background: transparent;
+}
+
+.mb-3:hover .form-label:hover .form-control:hover {
+    background-color: white;
+}
+
+.mb-3::placeholder .form-label::placeholder .form-control::placeholder {
+    color: white;
+}
+
+#estados {
+    background-color: transparent;
+    border-radius: 1% solid black;
+    width: 500px;
+    height: 40px;
+}
